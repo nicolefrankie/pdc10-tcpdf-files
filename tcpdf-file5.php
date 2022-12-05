@@ -6,7 +6,7 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8',
 // set document information
 $pdf->SetCreator(PDF_CREATOR);
 $pdf->SetAuthor('Nicole Frankie Capuno');
-$pdf->SetTitle('TCPDF Favorites Qoutes');
+$pdf->SetTitle('TCPDF Favorites Quotes');
 $pdf->SetSubject('TCPDF Tutorial');
 
 // set header and footer fonts
@@ -40,7 +40,7 @@ $pdf->AddPage();
 $pdf->setFontSubsetting(false);
 
 $pdf->SetFont('helvetica', 'B', 20);
-$pdf->Write(0, 'Favorite Qoutes', '', 0, 'C', 1, 0, false, false, 0);
+$pdf->Write(0, 'Favorite Quotes', '', 0, 'C', 1, 0, false, false, 0);
 $pdf->Ln(10);
 
 $pdf->SetFont('FreeMono', '', 12);
